@@ -5,75 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Food LLC</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-  
+    <link rel="stylesheet" href="css/style.css">  
   </head>
-  
-  <body>
-    
-    <!-- entete -->
+  <body>    
+    <!--************************* Entete avec menu ************************-->
     <header>
       <nav id="header-nav" class="navbar navbar-default">
-        <div class="container">
+        <div class="container-fluid">
           <div class="navbar-header">
-            <!--a href="index.html" class="">
-              <div id="logo-img" alt="Logo" class="pull-left visible-lg visible-md"></div><!--La class Pull-left de bootstrap permet de flotter le logo à gauche la div navbar-brand peut venir se positionner à sa droite-->
-              <!-- les class visible-lg et md permettent de cacher l'élément quand la fenêtre devient petite --/a>-->
-
-            <div class="navbar-brand">
-              <div class="pull-left">
-                <a href="#"><h1>Food, LLC</h1></a>
-              </div>
-              <!--p>
-                <img src="img/tn_kosher_symbol.jpg" alt="Certifié Kasher">
-                <span>Certifié Kasher</span>
-              </p-->
+            <div class="navbar-brand">             
+                <h1>Food, LLC</h1>          
             </div>
 
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <!--Le data target est à définir : ici c'est une exemple-->
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-pliable" aria-expanded="false"><!--Il faut toujours laisser cet attribut à false (pour lecteur d'écran)-->
-              <span class="sr-only">Toggle navigation</span><!--sr-only = screen reader only ==> ne seront pas visibles dans la page -->
+            <!-- Brand and toggle get grouped for better mobile display -->            
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu-pliable" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span><!--sr-only = screen reader only -->
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-
           </div><!--fin navbar-header-->
 
           <div id="menu-pliable" class="collapse navbar-collapse">
-            <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
               <li>
-                <a href="#">
-                  <!--span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"-->Chicken</a>
-              </li>
-              <li>
-                <a href="#">
-                  <!--span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"-->Beef</a>
+                <a href="#chicken" class="chicken">Chicken</a>
               </li>
               <li>
-                <a href="#">
-                  <!--span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"-->Sushi</a>
+                <a href="#beef" class="beef">Beef</a>
               </li>
-              <!--li id="phone" class="hidden-xs"><!--Pour cacher cet item en écran smartphone pour mettre le n° en avant-->
-                <!--a href="tel:0684504252"--><!--permet d'appeler en cliquant le lien-->
-                  <!--span>06 84 50 42 52</span></a--><!--div>* Nous Livrons</div-->        
+              <li>
+                <a href="#sushi" class="sushi">Sushi</a>
               </li>
-            </ul--><!--nav-list-->
-
-          </div><!--fin menu-pliable-->
-        
-        
-        
-        
-        
-        
-        
-        
-        </div>
+            </ul><!--nav-list-->
+          </div><!--fin menu-pliable-->         
+        </div><!--fin container-->
       </nav>
     </header>
 
+    <!-- **************************** contenu principal ************************ -->
+    <div id = "main-content" class="container-fluid">
+      <h2>Our Menu</h2>
+      <div id = "chicken" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h3>Chicken</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo omnis neque incidunt, corrupti fugit at laboriosam dolorem quia cupiditate a dolor in eaque praesentium autem, libero, doloremque eos facilis delectus?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptates ipsam dicta debitis suscipit alias maiores amet architecto odit, omnis optio sunt maxime quibusdam facilis aliquam, neque explicabo necessitatibus veniam.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, optio hic rerum a suscipit possimus. Assumenda magnam fugit voluptate! Itaque est impedit voluptatum alias atque fugiat neque unde modi quas.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor distinctio officiis pariatur aliquam ratione repellat iure accusamus sint! Corporis similique maxime, ipsum ipsam praesentium assumenda quod quaerat nesciunt minus pariatur!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo omnis neque incidunt, corrupti fugit at laboriosam dolorem quia cupiditate a dolor in eaque praesentium autem, libero, doloremque eos facilis delectus?
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor distinctio officiis pariatur aliquam ratione repellat iure accusamus sint! Corporis similique maxime, ipsum ipsam praesentium assumenda quod quaerat nesciunt minus pariatur!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo omnis neque incidunt, corrupti fugit at laboriosam dolorem quia cupiditate a dolor in eaque praesentium autem, libero, doloremque eos facilis delectus?          
+        </p>     
+      </div><!--fin chicken-->
+      <div id = "beef" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h3>Beef</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo omnis neque incidunt, corrupti fugit at laboriosam dolorem quia cupiditate a dolor in eaque praesentium autem, libero, doloremque eos facilis delectus?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptates ipsam dicta debitis suscipit alias maiores amet architecto odit, omnis optio sunt maxime quibusdam facilis aliquam, neque explicabo necessitatibus veniam.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, optio hic rerum a suscipit possimus. Assumenda magnam fugit voluptate! Itaque est impedit voluptatum alias atque fugiat neque unde modi quas.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor distinctio officiis pariatur aliquam ratione repellat iure accusamus sint! Corporis similique maxime, ipsum ipsam praesentium assumenda quod quaerat nesciunt minus pariatur!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo omnis neque incidunt, corrupti fugit at laboriosam dolorem quia cupiditate a dolor in eaque praesentium autem, libero, doloremque eos facilis delectus? 
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor distinctio officiis pariatur aliquam ratione repellat iure accusamus sint! Corporis similique maxime, ipsum ipsam praesentium assumenda quod quaerat nesciunt minus pariatur!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo omnis neque incidunt, corrupti fugit at laboriosam dolorem quia cupiditate a dolor in eaque praesentium autem, libero, doloremque eos facilis delectus?            
+        </p>     
+      </div><!--fin Beef-->
+      <div id ="sushi" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <h3>Sushi</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo omnis neque incidunt, corrupti fugit at laboriosam dolorem quia cupiditate  a dolor in eaque praesentium autem, libero, doloremque eos facilis delectus?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptates ipsam dicta debitis suscipit alias maiores amet architecto odit, omnis optio sunt maxime quibusdam facilis aliquam, neque explicabo necessitatibus veniam.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, optio hic rerum a suscipit possimus. Assumenda magnam fugit voluptate! Itaque est impedit voluptatum alias atque fugiat neque unde modi quas.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor distinctio officiis pariatur aliquam ratione repellat iure accusamus sint! Corporis similique maxime, ipsum ipsam praesentium assumenda quod quaerat nesciunt minus pariatur!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo omnis neque incidunt, corrupti fugit at laboriosam dolorem quia cupiditate a dolor in eaque praesentium autem, libero, doloremque eos facilis delectus
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor distinctio officiis pariatur aliquam ratione repellat iure accusamus sint! Corporis similique maxime, ipsum ipsam praesentium assumenda quod quaerat nesciunt minus pariatur!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo omnis neque incidunt, corrupti fugit at laboriosam dolorem quia cupiditate a dolor in eaque praesentium autem, libero, doloremque eos facilis delectus?     
+        </p>     
+      </div><!--fin Sushi-->
+
+    </div><!--fin main-content-->  
 
     <!-- jQuery (Bootstrap JS plugins depend on it) -->
     <script src="js/jquery-2.1.4.min.js"></script>

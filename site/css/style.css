@@ -1,1 +1,68 @@
-﻿
+﻿/**************** style de base ************************/
+body{ /* init body */
+    margin: 0; 
+    padding: 0;
+}
+
+#header-nav{ /*color and border nav */
+    background-color: hsla(231, 100%, 41%, 0.883);
+    border: 3px solid black;
+    border-radius: 0;
+
+}
+.navbar{
+    margin-bottom: 0;
+}
+.navbar-brand{
+    padding-top: 10px;
+    min-height: 70px;
+}
+.navbar-brand h1{
+   
+    color: honeydew;
+    margin-top: 0;    
+}
+.navbar-nav {
+    margin: 7.5px -15px 0 -15px ;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border:none;
+}
+
+#main-content{   
+    text-align: justify;
+    font-size: 1.3em;
+}
+
+h2, h3{
+    text-align: center;
+    margin: 20px;
+    font-weight: bold;
+}
+h2{
+    margin-bottom: 40px;
+}
+.chicken, #chicken{
+    background-color: #E8921D;
+}
+.beef, #beef{
+    background-color:#A02630;
+}
+.sushi, #sushi{
+    background-color: #F79046;
+}
+
+#menu-pliable a{
+    text-align: center;
+    color: honeydew;
+    font-size: 1.3em;
+}
+#menu-pliable a:hover{
+    background-color: rgb(70, 6, 6);
+}
+
+@media (max-width:767px) { 
+    #main-content{
+        width: 80%;
+    }
+}
